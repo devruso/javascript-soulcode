@@ -99,28 +99,3 @@ lados é maior que o terceiro lado.
     
     // console.log(numerosPares);
 
-// Exercício II: Crie um objeto que representa um produto.
-// Propriedades: nome, descricao, quantidade, precoOriginal, desconto (em reais).
-// Métodos:
-// - calcularPrecoDesconto(): retorna o valor aplicado ao desconto
-// - apresentacao(): mostra as informações das propriedades
-// - comprar(total): reduz a quantidade em relação ao total
-
-    const produto = {
-        nome : "Bicicleta",
-        descricao: "uma boa bicicleta",
-        quantidade: 8,
-        precoOriginal: 600,
-        desconto: 60,
-        calcularPrecoDesconto(preco, desconto){
-                return preco - desconto;
-        },
-        apresentacao(){
-            console.log(`Temos ${this.nome}s, é ${this.descricao} e custa ${this.precoOriginal} no cartao de credito ou ${this.calcularPrecoDesconto(this.precoOriginal, this.desconto)} se for no debito. No momento temos: ${this.quantidade} ${this.nome}s`)
-        },
-        comprar(total){
-                this.quantidade-= total;
-        }
-    }
-
-produto.apresentacao();
