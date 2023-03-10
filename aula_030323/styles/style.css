@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+#form{
+    display: inline-block;
+    width: 50%;
+    margin: 0 a;
+    justify-content: center;
+    border: 1px dashed blue;
+}

@@ -8,5 +8,9 @@ let arrayFinal = array.map((elemento)=>{
     }
 })
 
-console.log(arrayFinal);
- 
+ function repeticao(nome){
+    for(letra of nome){
+        console.log(letra);
+    }
+}
+repeticao("Jamilson");
